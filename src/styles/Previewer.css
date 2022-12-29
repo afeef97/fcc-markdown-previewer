@@ -1,0 +1,14 @@
+.preview-area {
+    background-color: blanchedalmond;
+    flex-basis: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    min-height: 45vh;
+}
+
+.preview-area .header-bar {
+    background-color: rgb(218, 202, 178);
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+}

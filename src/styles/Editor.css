@@ -6,19 +6,20 @@
     border-radius: 0.5rem;
 }
 
-.header-bar {
+.editor-area .header-bar {
     background-color: rgb(218, 202, 178);
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.header-bar p {
+.editor-area .header-bar p {
     margin-left: 1rem;
 }
 
 .editor-area textarea {
     background-color: rgb(241, 223, 196);
-    width: 50vw;
-    height: 50vh;
+    max-width: 70vw;
+    min-width: 50vw;
+    height: 45vh;
     margin: 0.5rem;
     border: 0;
 }

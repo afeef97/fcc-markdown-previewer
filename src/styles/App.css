@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+
