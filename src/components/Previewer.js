@@ -14,11 +14,16 @@ marked.setOptions({
 })
 
 export default class Previewer extends React.Component {
+    getMarkdownText() {
+        let rawMarkup = marked.parse(this.props.input);
+        return {__html: rawMarkup};
+    }
+
     render() {
         return (
             <div className='preview-area'>
                 <HeaderBar title="Markdown Preview"/>
-                <p>{marked.parse(this.props.input)}</p>
+                <div className="markdown" dangerouslySetInnerHTML={this.getMarkdownText()}></div>
             </div>
         );
     }
