@@ -1,6 +1,5 @@
 .editor-area {
     background-color: blanchedalmond;
-    width: fit-content;
     margin-top: 1rem;
     margin-left: 1rem;
     border-radius: 0.5rem;
@@ -12,6 +11,7 @@
 }
 
 .editor-area .header-bar p {
+    margin: 0;
     margin-left: 1rem;
 }
 
