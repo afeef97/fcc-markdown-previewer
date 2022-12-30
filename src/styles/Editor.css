@@ -1,7 +1,8 @@
 .editor-area {
     background-color: var(--primary);
-    margin-top: 1rem;
-    margin-left: 1rem;
+    flex-basis: 50%;
+    margin: 1rem;
+    margin-right: 0;
     box-shadow: 0 0 0.5rem var(--accent);
 }
 
@@ -13,7 +14,7 @@
     background-color: calc(var(--primary));
     max-width: 70vw;
     min-width: 50vw;
-    height: 45vh;
+    height: 90vh;
     border: 0;
     outline: none;
 }

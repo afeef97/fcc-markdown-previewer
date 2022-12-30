@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/App.css";
 import Editor from "./Editor";
 import Previewer from "./Previewer";
-import Guide from "./Guide";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -25,7 +24,6 @@ export default class App extends React.Component {
     return (
       <div className="app">
         <Editor input={this.state.textInput} onChange = {this.handleTextInput}/>
-        <Guide />
         <Previewer input={this.state.textInput}/>
       </div>
     );

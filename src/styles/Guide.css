@@ -1,7 +1,0 @@
-.guide-area {
-    background-color: var(--primary);
-    margin-top: 1rem;
-    margin-right: 1rem;
-    flex-grow: 1;
-    box-shadow: 0 0 0.5rem var(--accent);
-}
