@@ -1,7 +1,7 @@
-import React from 'react';
-import HeaderBar from './HeaderBar';
-import { marked } from 'marked';
-import DOMPurify from 'dompurify';
+import React from "react";
+import HeaderBar from "./HeaderBar";
+import { marked } from "marked";
+import DOMPurify from "dompurify";
 import "../styles/Previewer.css"
 
 marked.setOptions({

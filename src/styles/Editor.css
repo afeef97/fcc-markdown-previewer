@@ -5,16 +5,6 @@
     border-radius: 0.5rem;
 }
 
-.editor-area .header-bar {
-    background-color: rgb(218, 202, 178);
-    border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.editor-area .header-bar p {
-    margin: 0;
-    margin-left: 1rem;
-}
-
 .editor-area textarea {
     background-color: rgb(241, 223, 196);
     max-width: 70vw;

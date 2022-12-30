@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderBar from "./HeaderBar";
+import "../styles/Editor.css"
 
 export default class Editor extends React.Component {
     render() {

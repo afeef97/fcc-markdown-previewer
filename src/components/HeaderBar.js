@@ -1,8 +1,5 @@
 import React from "react";
-import "../styles/App.css";
-import "../styles/Editor.css";
-import "../styles/Previewer.css";
-import "../styles/Guide.css";
+import "../styles/HeaderBar.css";
 
 export default class HeaderBar extends React.Component {
     render() {

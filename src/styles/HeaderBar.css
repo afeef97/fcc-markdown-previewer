@@ -1,0 +1,9 @@
+.header-bar {
+    background-color: rgb(218, 202, 178);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.header-bar p {
+    margin: 0;
+    margin-left: 1rem;
+}
