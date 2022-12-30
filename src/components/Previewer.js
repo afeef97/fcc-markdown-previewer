@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderBar from './HeaderBar';
 import { marked } from 'marked';
+import DOMPurify from 'dompurify';
 import "../styles/Previewer.css"
 
 marked.setOptions({
@@ -15,7 +16,7 @@ marked.setOptions({
 
 export default class Previewer extends React.Component {
     getMarkdownText() {
-        let rawMarkup = marked.parse(this.props.input);
+        let rawMarkup = DOMPurify.sanitize(marked.parse(this.props.input));
         return {__html: rawMarkup};
     }
 
