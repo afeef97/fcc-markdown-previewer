@@ -6,9 +6,14 @@
 .header-bar p {
     padding: 0.6rem 0;
     margin: 0;
-    margin-left: 1.5rem;
 }
 
 .header-bar span {
     margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 820px) {
+    .header-bar p {
+        margin-left: 1.5rem;
+    }
 }
