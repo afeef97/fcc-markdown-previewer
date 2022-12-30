@@ -15,7 +15,8 @@
 }
 
 .markdown {
-    padding: 2rem;
+    padding: 4rem;
+    padding-top: 1rem;
 }
 
 .markdown table {
@@ -26,6 +27,12 @@
 .markdown td, .markdown th {
     padding: 0.25rem;
     border: 1px solid;
+}
+
+.markdown blockquote {
+    background-color: var(--accent);
+    border-left: 10px solid var(--secondary);
+    padding: 0.15rem 0.5rem;
 }
 
 .markdown img {

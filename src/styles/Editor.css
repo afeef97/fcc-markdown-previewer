@@ -5,6 +5,10 @@
     box-shadow: 0 0 0.5rem var(--accent);
 }
 
+.editor-area .header-bar i {
+    display: inline;
+}
+
 .editor-area textarea {
     background-color: calc(var(--primary));
     max-width: 70vw;
