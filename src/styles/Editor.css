@@ -1,15 +1,15 @@
 .editor-area {
-    background-color: blanchedalmond;
+    background-color: var(--primary);
     margin-top: 1rem;
     margin-left: 1rem;
-    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem var(--accent);
 }
 
 .editor-area textarea {
-    background-color: rgb(241, 223, 196);
+    background-color: calc(var(--primary));
     max-width: 70vw;
     min-width: 50vw;
     height: 45vh;
-    margin: 0.5rem;
     border: 0;
+    outline: none;
 }

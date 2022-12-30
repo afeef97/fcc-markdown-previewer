@@ -1,9 +1,9 @@
 .preview-area {
-    background-color: cornflowerblue;
+    background-color: var(--primary);
     flex-basis: 80%;
     margin: 0 auto 1rem auto;
-    border-radius: 0.5rem;
     min-height: 45vh;
+    box-shadow: 0 0 0.5rem var(--accent);
 }
 
 .preview-area .header-bar {
@@ -35,5 +35,5 @@
 }
 
 .markdown code, .markdown pre {
-    background-color: white;
+    background-color: var(--accent);
 }
