@@ -8,7 +8,7 @@ export default class Editor extends React.Component {
             <div className="editor-container">
                 <HeaderBar title="Editor"/>
                 <div className="editor-area">
-                    <textarea id="editor" onChange={this.props.onChange}></textarea>
+                    <textarea id="editor" onChange={this.props.onChange}>{this.props.input}</textarea>
                 </div>
             </div>
         );
