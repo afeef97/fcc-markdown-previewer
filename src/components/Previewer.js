@@ -22,8 +22,8 @@ export default class Previewer extends React.Component {
 
     render() {
         return (
-            <div className="preview-container">
-                <HeaderBar title="Markdown Preview"/>
+            <div className="preview-container" style={this.props.isExpand ? {width: '80%'} : null}>
+                <HeaderBar title="Markdown Preview" isExpand = {this.props.isExpand} expandHandler={this.props.expandHandler}/>
                 <div className='preview-area'>
                     <div className="markdown" dangerouslySetInnerHTML={this.getMarkdownText()}></div>
                 </div>

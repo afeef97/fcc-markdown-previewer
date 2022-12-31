@@ -5,15 +5,34 @@
     color: var(--primary);
 }
 
-.header-bar p {
-    padding: 0.6rem 0;
+.header-content {
+    padding: 0.5rem 1.5rem;
+    padding-left: 0;
+}
+
+.header-bar i:not(.button-icon) {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.title {
+    display: inline;
     margin: 0;
-}
-
-.header-bar i {
-    margin-left: 1rem;
-}
-
-.header-bar span {
     margin-left: 0.5rem;
+    flex-grow: 1;
+}
+
+.button-icon {
+    color: var(--primary);
+}
+
+.button {
+    background: none;
+    padding: 0;
+    border: 0;
+    width: 1.5rem;
+}
+
+.button:hover {
+    cursor: pointer;
 }

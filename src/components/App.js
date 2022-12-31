@@ -8,10 +8,12 @@ export default class App extends React.Component {
     super(props);
     
     this.state = {
-      textInput: ''
+      textInput: '',
+      expandPreview: false
     };
     
     this.handleTextInput = this.handleTextInput.bind(this);
+    this.handleExpand = this.handleExpand.bind(this);
   }
 
   handleTextInput(event) {
@@ -19,12 +21,22 @@ export default class App extends React.Component {
       textInput: event.target.value
     });
   }
+
+  handleExpand() {
+    this.setState({
+      expandPreview: !this.state.expandPreview
+    })
+  }
   
   render() {
     return (
       <div className="app">
-        <Editor input={this.state.textInput} onChange = {this.handleTextInput}/>
-        <Previewer input={this.state.textInput}/>
+        {
+          this.state.expandPreview 
+          ? null 
+          : <Editor input={this.state.textInput} onChange = {this.handleTextInput}/>
+        }       
+        <Previewer input={this.state.textInput} isExpand = {this.state.expandPreview} expandHandler = {this.handleExpand}/> 
       </div>
     );
   }
