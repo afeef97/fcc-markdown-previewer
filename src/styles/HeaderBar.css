@@ -2,7 +2,7 @@
     background-color: var(--secondary);
     border: 1px solid var(--primary);
     border-bottom: none;
-    color: var(--primary)
+    color: var(--primary);
 }
 
 .header-bar p {
