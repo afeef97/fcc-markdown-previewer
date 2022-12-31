@@ -4,10 +4,9 @@
   justify-content: center;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 900px) {
   .app {
     flex-wrap: nowrap;
-    gap: 1rem;
   }
 }
 

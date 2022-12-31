@@ -1,9 +1,45 @@
+.editor-container {
+    box-shadow: 0 0 0.5rem var(--shadow);
+    margin: 1rem 0.35rem;
+    width: 20rem;
+}
+
 .editor-area {
-    display: flex;
-    flex-direction: column;
     background-color: var(--primary);
-    margin: 1rem 0;
-    box-shadow: 0 0 0.5rem var(--accent);
+    height: 25vh;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 664px) {
+    .editor-area {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .editor-container {
+        width: 30rem;
+        margin-right: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .editor-area {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .editor-container {
+        width: 40rem;
+        margin-right: 1rem;
+        margin-top: 1.25rem;
+    }
+}
+
+@media screen and (min-height: 1080px) {
+    .editor-area {
+        height: 92vh;
+    }
 }
 
 .editor-area .header-bar {
@@ -12,27 +48,12 @@
 
 .editor-area textarea {
     background-color: calc(var(--primary));
-    width: 27.5rem;
-    min-width: 27.5rem;
-    min-height: 50vh;
     resize: none;
     height: 100%;
-    border: 0;
+    width: 100%;
     outline: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
-
-@media only screen and (min-width: 820px) {
-    .editor-area {
-        margin: 1rem;
-        margin-right: 0;
-        min-height: 90vh;
-    }
-
-    .editor-area textarea {
-        resize: horizontal;
-        max-width: 70vw;
-        min-width: 50vw;
-    }
-}
-
 

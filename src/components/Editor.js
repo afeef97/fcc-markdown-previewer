@@ -5,9 +5,11 @@ import "../styles/Editor.css"
 export default class Editor extends React.Component {
     render() {
         return (
-            <div className="editor-area">
+            <div className="editor-container">
                 <HeaderBar title="Editor"/>
-                <textarea id="editor" onChange={this.props.onChange}></textarea>
+                <div className="editor-area">
+                    <textarea id="editor" onChange={this.props.onChange}></textarea>
+                </div>
             </div>
         );
     }

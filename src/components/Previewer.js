@@ -22,9 +22,11 @@ export default class Previewer extends React.Component {
 
     render() {
         return (
-            <div className='preview-area'>
+            <div className="preview-container">
                 <HeaderBar title="Markdown Preview"/>
-                <div className="markdown" dangerouslySetInnerHTML={this.getMarkdownText()}></div>
+                <div className='preview-area'>
+                    <div className="markdown" dangerouslySetInnerHTML={this.getMarkdownText()}></div>
+                </div>
             </div>
         );
     }

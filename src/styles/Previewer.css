@@ -1,29 +1,40 @@
+.preview-container {
+    box-shadow: 0 0 0.5rem var(--shadow);
+    margin: 1rem 0.35rem;
+    width: 20rem;
+}
+
 .preview-area {
-    background-color: var(--primary);
-    margin-bottom: 1rem;
-    min-width: 27.5rem;
-    max-width: 27.5rem;
-    min-height: 50vh;
-    box-shadow: 0 0 0.5rem var(--accent);
+    background-color: var(--primary); 
+    height: 80vh;
+    overflow: scroll;
 }
 
 .preview-area .header-bar {
     text-align: center;
 }
 
-@media only screen and (min-width: 820px) {
+@media screen and (min-width: 1080px) {
+    .preview-container {
+        min-width: 50%;
+        margin-left: 1rem;
+        margin-top: 1.25rem;
+    }
+
     .preview-area {
-        margin: 1rem;
-        margin-left: 0;
-        flex-basis: 50%;
-        min-width: unset;
-        max-width: 50vw;
+        height: 90vh;
     }
 }
 
+@media screen and (min-height: 1080px) {
+    .preview-area {
+        height: 92vh;
+    }
+}
 
+/* Markdown preview area */
 .markdown {
-    padding: 4rem;
+    padding: 2rem;
     padding-top: 1rem;
 }
 

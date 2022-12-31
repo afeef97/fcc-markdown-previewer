@@ -1,6 +1,8 @@
 .header-bar {
     background-color: var(--secondary);
-    border: 1px solid var(--accent);
+    border: 1px solid var(--primary);
+    border-bottom: none;
+    color: var(--primary)
 }
 
 .header-bar p {
@@ -8,12 +10,10 @@
     margin: 0;
 }
 
-.header-bar span {
-    margin-left: 0.5rem;
+.header-bar i {
+    margin-left: 1rem;
 }
 
-@media only screen and (min-width: 820px) {
-    .header-bar p {
-        margin-left: 1.5rem;
-    }
+.header-bar span {
+    margin-left: 0.5rem;
 }

@@ -7,9 +7,9 @@ export default class HeaderBar extends React.Component {
             <div className="header-bar" key={this.props.title}>
                 <p>
                     {
-                        this.props.title == "Editor" 
+                        this.props.title === "Editor" 
                             ? <i className="fa-solid fa-pen"></i>
-                            : this.props.title == "Markdown Preview"
+                            : this.props.title === "Markdown Preview"
                             ? <i className="fa-solid fa-magnifying-glass"></i>
                             : null
                     } <span>{this.props.title}</span>
