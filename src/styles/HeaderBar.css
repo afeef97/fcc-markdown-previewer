@@ -26,6 +26,10 @@
     color: var(--primary);
 }
 
+.button-icon:hover {
+    color: #7adbe2;
+}
+
 .button {
     background: none;
     padding: 0;

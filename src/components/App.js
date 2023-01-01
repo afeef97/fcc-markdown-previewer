@@ -14,6 +14,7 @@ export default class App extends React.Component {
     
     this.handleTextInput = this.handleTextInput.bind(this);
     this.handleExpand = this.handleExpand.bind(this);
+    this.handleErase = this.handleErase.bind(this);
   }
 
   handleTextInput(event) {
@@ -27,6 +28,12 @@ export default class App extends React.Component {
       expandPreview: !this.state.expandPreview
     })
   }
+
+  handleErase() {
+    this.setState({
+      textInput: ''
+    })
+  }
   
   render() {
     return (
@@ -34,7 +41,7 @@ export default class App extends React.Component {
         {
           this.state.expandPreview 
           ? null 
-          : <Editor input={this.state.textInput} onChange = {this.handleTextInput}/>
+          : <Editor input={this.state.textInput} onChange = {this.handleTextInput} eraseHandler = {this.handleErase}/>
         }       
         <Previewer input={this.state.textInput} isExpand = {this.state.expandPreview} expandHandler = {this.handleExpand}/> 
       </div>

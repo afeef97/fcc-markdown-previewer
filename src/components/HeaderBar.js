@@ -8,7 +8,9 @@ export default class HeaderBar extends React.Component {
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <i className="fa-solid fa-pen"></i>
                     <p className="title">{this.props.title}</p>
-                    <button className="button"><i className="fa-solid fa-eraser button-icon"></i></button>
+                    <button onClick={this.props.eraseHandler} className="button">
+                        <i className="fa-solid fa-eraser button-icon"></i>
+                    </button>
                 </div>
             );
         }
