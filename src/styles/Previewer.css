@@ -2,12 +2,14 @@
     box-shadow: 0 0 0.5rem var(--shadow);
     margin: 1rem 0.35rem;
     width: 20rem;
+    transition: width 0.5s;
+    transition-delay: 0.1s;
 }
 
 .preview-area {
     background-color: var(--primary); 
     height: 80vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .preview-area .header-bar {
